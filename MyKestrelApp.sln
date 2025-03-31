@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyKestrelApp", "MyKestrelApp.csproj", "{60073B78-590E-4152-80E3-F8A571D9D61D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60073B78-590E-4152-80E3-F8A571D9D61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60073B78-590E-4152-80E3-F8A571D9D61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60073B78-590E-4152-80E3-F8A571D9D61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60073B78-590E-4152-80E3-F8A571D9D61D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00E918EC-2B95-4282-A406-D1CB2A747B63}
+	EndGlobalSection
+EndGlobal

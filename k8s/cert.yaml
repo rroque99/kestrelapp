@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dotnet-cert
+  namespace: dotnet-app
+spec:
+  secretName: dotnet-tls
+  duration: 90d
+  issuerRef:
+    name: selfsigned-issuer
+    kind: Issuer
+  dnsNames:
+    - dotnet-kestrel.dotnet-app.svc

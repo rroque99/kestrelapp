@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet-kestrel
+  namespace: dotnet-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dotnet-kestrel
+  template:
+    metadata:
+      labels:
+        app: dotnet-kestrel
+    spec:
+      volumes:
+        - name: certs
+          secret:
+            secretName: dotnet-tls
+      containers:
+        - name: dotnet-kestrel
+          image: rroque99/mykestrel:x86
+          ports:
+            - containerPort: 443
+          volumeMounts:
+            - mountPath: "/certs"
+              name: certs
+              readOnly: true
